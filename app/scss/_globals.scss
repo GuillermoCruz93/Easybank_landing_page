@@ -11,15 +11,17 @@ html {
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 0;    
+    font-family: 'Public Sans', sans-serif;
     line-height: 1.3;
+    font-weight: 300;
     font-size: $font-med;
     color: $grayisBlue;
-    font-family: 'Public Sans', sans-serif;
 }
+
 a, a:visited, a:hover{
     text-decoration: none;
-    color: $grayisBlue;
+    
 }
 
 //FlexBox
@@ -39,3 +41,30 @@ a, a:visited, a:hover{
         align-items: center;
     }
 }
+
+//Buttons
+.button{
+    padding: 0.875rem 2.1875rem;
+    background: linear-gradient(to right,$limeGreen, $brightCyan);
+    border: 0;
+    border-radius: 50px;
+    color: $white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+//Visibility
+.hide-for-mobile{
+    //Hide for tables and mobiles
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide-for-desktop{
+    //Hide for desktop viewport
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
+
