@@ -1,0 +1,24 @@
+header{
+ 
+    nav{
+        padding: 24px;
+    }
+    &__logo{
+
+    }
+
+    &__menu{ //Mobile Menu
+        >img{
+            display: block;
+            width: 26px;
+            background-color: $darkBlue;
+
+        }
+    }
+
+    &__links{
+        a{
+            font-size: $font-sm;
+        }
+    }
+}
