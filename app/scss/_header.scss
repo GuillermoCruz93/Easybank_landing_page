@@ -1,4 +1,4 @@
-header {
+.header {
 
     nav {
         padding: 1.0625rem 1.5rem;
@@ -22,7 +22,7 @@ header {
 
     &__links {
 
-        a {
+        >a {
             position: relative;
             font-size: $font-sm;
             color: $grayisBlue;
